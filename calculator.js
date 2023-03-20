@@ -40,7 +40,6 @@ function calculator(string) {
     case 'roman': // в случае только римских
       
       function romanToArabic(roman) {//функция принимает только числа и возвращает арабское написание
-        if (roman < 1) return 0;//непонятная строка проверить  
         let num = 0;
         for (let [romanDigit, arabicValue] of alphabetRomanArabic) {
           while (roman.startsWith(romanDigit)) {
